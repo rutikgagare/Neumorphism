@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: #e3edf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container p{
+    font-size: 32px;
+    letter-spacing: 4px;
+    color: #777;
+    margin: -250px 0 100px;
+}
+
+.container input{
+    width: 0;
+    height: 0;
+}
+
+.container input::before{
+    content: '\f011';
+    font-family: "FontAwesome";
+    font-size: 52px;
+    color: #777;
+    height: 160px;
+    width: 160px;
+    transform: translateX(-80px);
+    background: #e3edf7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+.container input:checked::before{
+    color: #4fce5d;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.3),
+                -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+
+
+
